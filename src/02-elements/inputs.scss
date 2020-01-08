@@ -1,0 +1,5 @@
+.input-form{
+    @include smooth-box;
+    padding:30px 10px; 
+    border:1px solid $color-primary;
+}

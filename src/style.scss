@@ -1,0 +1,12 @@
+@import "./00-settings/variables.scss";
+@import "./00-settings/mixins.scss";
+@import "./01-generic/tags.scss";
+@import "./02-elements/inputs.scss";
+
+/*tricks*/
+.joan{display:block;}
+.fornis{display:inline;}
+.background{
+    background-color:$color-neutral;
+    color:$color-primary;
+}
