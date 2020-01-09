@@ -3,7 +3,7 @@
 
 ## Getting started
 
-After install **node.js**, **npm** & **git** clone project to your machine (via cmd):
+After install **node.js**, **npm** & **git**. Clone this project to your machine (via cmd):
 `git clone https://github.com/joanfornis/joan-atomic.git`,
 Install dependences of this project: `npm install` and use these commands to compile scss and pug. **SCSS:** `npm run scss`  **PUG:** `npm run pug`.
 
