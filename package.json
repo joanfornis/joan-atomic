@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch ./src -o ./dist/css"
+    "scss": "node-sass --watch ./src -o ./dist/css",
+    "pug": "pug --watch ./src/06-pages -o ./dist/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
