@@ -17,3 +17,5 @@ Install dependences of this project: `npm install` and use these commands to com
   * 04-blocks
   * 05-layouts
   * 06-pages
+
+The compiled files will be appear in an auto generated folder called /dist when it execute the script that it's talk before.
