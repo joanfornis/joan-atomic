@@ -1,12 +1,13 @@
-@import "./00-settings/variables.scss";
-@import "./00-settings/mixins.scss";
-@import "./01-generic/tags.scss";
-@import "./02-elements/inputs.scss";
+/*01-ELEMENTS*/
+@import "./01-elements/tags.scss";
+@import "./01-elements/button-submit.scss";
 
-/*tricks*/
-.joan{display:block;}
-.fornis{display:inline;}
-.background{
-    background-color:$color-neutral;
-    color:$color-primary;
-}
+/*02-COMPONENTS*/
+@import "./02-components/card.scss";
+
+@import "./02-components/layout/header.scss";
+@import "./02-components/layout/gridsystem.scss";
+@import "./02-components/layout/footer.scss";
+
+/*03-PAGES*/
+@import "./03-pages/index.scss";

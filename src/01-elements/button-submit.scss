@@ -1,0 +1,8 @@
+@import "./../00-settings/imports";
+
+.button-submit{
+    @include smooth-box
+    background-color:olive;
+    padding: 0.75rem 2rem;
+    color: #fff;
+}

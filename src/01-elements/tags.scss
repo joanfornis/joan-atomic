@@ -1,9 +1,15 @@
-/*01-GENERIC*/
+@import "./../00-settings/imports";
 
-*{}
+/*tags*/
+*{
+    margin: 0;
+    font-family:arial
+}
 
 //root//
-body{color:$color-neutral;}
+body{
+    background-color: $color-neutral
+}
 
 //sectioning//
 address{}	
@@ -11,14 +17,14 @@ article{}
 aside{}	
 footer{}	
 header{}	
-h1{} h2{} h3{} h4{} h5{} h6{}	
+h1{margin:0} h2{} h3{} h4{} h5{} h6{}	
 hgroup{}	
 main{}	
 nav{}	
 section{}	
 
 
-/*text*/
+//text//
 blockquote{}	
 dd{}	
 dir{}	
@@ -31,12 +37,12 @@ hr{}
 li{}	
 main{}
 ol{}	
-p{}
+p{margin: 1rem 0;}
 pre{}	
 ul{}	
 
 
-/*inline text semantics*/
+//inline text semantics//
 a{}	
 abbr{}	
 b{}	
@@ -71,7 +77,7 @@ var{}
 wbr{}	
 
 
-/*embedded content*/
+//embedded content//
 applet{}
 embed{}
 iframe{}
@@ -82,7 +88,7 @@ picture{}
 source{}
 
 
-/*tables*/
+//tables//
 caption{}	
 col{}	
 colgroup{}
@@ -91,12 +97,12 @@ tbody{}
 td{}	
 tfoot{}	
 th{}	
-thead{}	
+thead{}
 tr{}	
 
 
-/*forms*/
-button{}
+//forms//
+button{color:grey;}
 datalist{}
 fieldset{}
 form{}
