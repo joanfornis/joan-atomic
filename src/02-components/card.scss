@@ -1,0 +1,6 @@
+@import "./../00-settings/imports";
+
+.card{
+    @include smooth-box;
+    padding: 1rem;
+}

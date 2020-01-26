@@ -1,0 +1,16 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    .row{
+        display: flex;
+        justify-content: center;
+        .col{
+            padding: 0.5rem;
+            width: 100%
+        }
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+}

@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch ./src -o ./dist/css",
-    "pug": "pug --watch ./src/06-pages -o ./dist/"
+    "pug": "pug --watch ./src/03-pages -o ./dist/"
   },
   "author": "",
   "license": "ISC",
