@@ -11,10 +11,8 @@ Install dependences of this project: `npm install` and use these commands to com
 
 * src
   * 00-settings
-  * 01-generic
-  * 02-elements
-  * 03-components
-  * 04-layouts
-  * 05-pages
+  * 01-elements
+  * 02-components
+  * 03-pages
 
 The compiled files will be appear in an auto generated folder called `/dist` when it execute the script that it's talk before.
