@@ -1,0 +1,10 @@
+mixin card(title,paragraph1,paragraph2,buttonLink,buttonText)
+    .card
+        if title
+            h2 #{title}
+        if paragraph1
+            p #{paragraph1}
+        if paragraph2
+            p #{paragraph2}
+        if buttonLink    
+            button.button-submit(href='#{buttonLink}') #{buttonText}
