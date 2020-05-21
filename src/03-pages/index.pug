@@ -3,13 +3,13 @@ head
 
 body
 
-    include ./../02-components/layout/header
+    include ./../00-settings/_imports
 
     .container
         .row
-            .col
-                include ./../02-components/card
-            .col
-                include ./../02-components/card
-            .col
-                include ./../02-components/card
+            .col 
+                +card('CARD1','parrrafo1',false,'#','confirmar')
+            .col 
+                +card('CARD2','parrrafo1',false,'#','confirmar')
+            .col 
+                +card('CARD3','parrrafo1',false,'#','confirmar')
