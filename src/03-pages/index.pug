@@ -7,9 +7,7 @@ body
 
     .container
         .row
-            .col 
-                +card('CARD1','parrrafo1',false,'#','confirmar')
-            .col 
-                +card('CARD2','parrrafo1',false,'#','confirmar')
-            .col 
-                +card('CARD3','parrrafo1',false,'#','confirmar')
+            - var values = [{'title':'título1','paragraph1':'párrafo1'},{'title':'título2','buttonLink':'Acceder','buttonText':'#'},{'title':'título2','paragraph1':'párrafo1','paragraph2':'párrafo2'}];
+            each val in values
+                .col 
+                    +card(val.title,val.paragraph1,val.paragraph2,val.buttonLink,val.buttonText)
