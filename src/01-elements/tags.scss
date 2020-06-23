@@ -8,7 +8,7 @@
 
 //root//
 body{
-    background-color: $color-neutral
+    background-color: $color-neutral;
 }
 
 //sectioning//
@@ -16,8 +16,8 @@ address{}
 article{}	
 aside{}	
 footer{}	
-header{}	
-h1{margin:0} h2{} h3{} h4{} h5{} h6{}	
+header{}
+h1, h2, h3, h4, h5, h6{}	
 hgroup{}	
 main{}	
 nav{}	

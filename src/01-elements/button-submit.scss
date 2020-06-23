@@ -1,8 +1,18 @@
-@mixin buttonSubmit {
-    .button-submit{
-        @include smoothBox;
-        background-color:olive;
-        padding: 0.75rem 2rem;
-        color: #fff;
+@mixin button ($textColor:$color-clear, $backgroundColor:$color-secondary) {
+    .button{
+        @include smoothBox ($backgroundColor:$backgroundColor,$padding:0.75rem 1rem);
+        width:100%;
+        color: $textColor;
+        outline: none;
+        cursor:pointer;
+        &:hover{
+            $hoverBackgroundColor: lighten($backgroundColor,10%);
+            background-color: $hoverBackgroundColor;
+            transition: all $transition-time ease-out;
+        }
+        &:active{
+            $activeBackgroundColor: darken($backgroundColor,10%);
+            background-color: $activeBackgroundColor
+        }
     }
 }
