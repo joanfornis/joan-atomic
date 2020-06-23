@@ -1,6 +1,6 @@
 @mixin buttonSubmit {
     .button-submit{
-        @include smooth-box;
+        @include smoothBox;
         background-color:olive;
         padding: 0.75rem 2rem;
         color: #fff;

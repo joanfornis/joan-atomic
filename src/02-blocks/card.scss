@@ -1,6 +1,6 @@
 @mixin card ($buttonSubmit:false){
     .card{
-        @include smooth-box;
+        @include smoothBox;
         padding: 1rem;
         @if $buttonSubmit{
             @include buttonSubmit
