@@ -1,10 +1,10 @@
 mixin card(title,paragraph1,paragraph2,buttonLink,buttonText)
     .card
         if title
-            h2 #{title}
+            h3 #{title}
         if paragraph1
             p #{paragraph1}
         if paragraph2
             p #{paragraph2}
         if buttonLink && buttonText    
-            button.button-submit(href=buttonLink) #{buttonText}
+            button.button(href=buttonLink) #{buttonText}

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch ./src -o ./dist/css",
-    "pug": "pug --watch ./src/03-pages -o ./dist/"
+    "pug": "pug --watch ./src/04-pages -o ./dist",
+    "scss-pages": "node-sass --watch ./src/04-pages -o ./dist/css",
+    "scss-layouts": "node-sass --watch ./src/05-layouts -o ./dist/css"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,17 @@
+@mixin card ($button:false,$buttonColor:$color-success){
+    .card{
+        @include smoothBox($zindex:1);
+        padding: 1rem;
+        h3{
+            margin: 0 0 1rem;
+            font-size:1.5rem
+        }
+        @if $button{
+            @include button($backgroundColor:$buttonColor)
+        }
+        &:hover{
+            @include smoothBox($zindex:2);
+            transition: all $transition-time ease-out
+        }
+    }
+}
