@@ -1,19 +1,31 @@
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
+@mixin flexGrid ($flex:auto, $justify:false, $align:false) {
     .row{
+        margin:0 -0.25rem;
         display: flex;
-        justify-content: center;
+        @if($justify){
+            justify-content: $justify;
+        }
+        @if($align){
+            align-items: $align;
+        }
         .col{
             padding: 0.5rem;
-            width: 100%;
+            @if($flex){
+                flex:$flex;
+            }
             @media (max-width: 768px){
-                padding:0.5rem 0;
+                padding:0.5rem 0
             }
         }
         @media (max-width: 768px){
             flex-direction: column;
+            margin:0 0.25rem
         }
     }
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    @include flexGrid
 }

@@ -1,6 +1,6 @@
-@import "./../00-settings/imports";
-
 header{
-    background-color:white;
+    background-color:$color-clear;
     padding:1rem;
+    box-shadow: $shadow-md;
+    @include flexGrid($flex:false, $justify:space-between, $align:center)
 }

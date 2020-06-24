@@ -1,1 +1,6 @@
-@import "./../00-settings/imports";
+footer{
+    background-color:$color-dark;
+    color:$color-clear;
+    padding:1rem;
+    @include flexGrid
+}

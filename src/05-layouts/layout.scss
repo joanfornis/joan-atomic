@@ -1,6 +1,10 @@
-@import "./header.scss";
-@import "./gridsystem.scss";
+@import "./../00-settings/imports";
 
 @import "./../01-elements/tags.scss";
 
+@import "./gridsystem.scss";
+
+@import "./header.scss";
+
 @import "./footer.scss";
+

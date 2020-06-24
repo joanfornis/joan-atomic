@@ -1,9 +1,9 @@
 @mixin button ($textColor:$color-clear, $backgroundColor:$color-secondary) {
     .button{
-        @include smoothBox ($backgroundColor:$backgroundColor,$padding:0.75rem 1rem);
+        @include smoothBox ($backgroundColor:$backgroundColor, $padding:0.75rem 1rem);
         width:100%;
         color: $textColor;
-        outline: none;
+        outline: 0;
         cursor:pointer;
         &:hover{
             $hoverBackgroundColor: lighten($backgroundColor,10%);
