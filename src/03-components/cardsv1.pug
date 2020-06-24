@@ -1,0 +1,8 @@
+mixin cardsv1(heading, values)
+    .cardsv1
+        .container
+            h2 #{heading}
+            .row
+                each val in values
+                    .col 
+                        +card(val.title,val.paragraph1,val.paragraph2,val.buttonLink,val.buttonText)

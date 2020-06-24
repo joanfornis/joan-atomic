@@ -1,13 +1,15 @@
-@mixin smoothBox ($backgroundColor:$color-clear, $padding:1rem, $zindex:false) {
-    border-radius: 5px;
-    border: none;
+@mixin smoothBox ($backgroundColor:$color-clear, $borderRadius:0.5rem, $padding:1rem, $zindex:0) {
+    border: 0;
     padding: $padding;
     background-color: $backgroundColor;
-    @if $zindex==1 {
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    @if $borderRadius{ 
+      border-radius: $borderRadius;
+    }
+    @if $zindex==0{
+      box-shadow: $shadow-sm
+    } @else if $zindex==1 {
+      box-shadow: $shadow-md
     } @else if $zindex==2 {
-      box-shadow: 0 6px 9px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
-    } @else {
-      box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 0px 0px rgba(0,0,0,0.23);
+      box-shadow: $shadow-lg
     }
   }
