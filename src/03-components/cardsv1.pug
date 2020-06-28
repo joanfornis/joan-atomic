@@ -1,8 +1,8 @@
-mixin cardsv1(heading, values)
+mixin cardsv1(heading, cards)
     .cardsv1
         .container
             h2 #{heading}
             .row
-                each val in values
+                each card in cards
                     .col 
-                        +card(val.title,val.paragraph1,val.paragraph2,val.buttonLink,val.buttonText)
+                        +card(card.title,card.paragraph1,card.paragraph2,card.buttonLink,card.buttonText,card.buttonType)

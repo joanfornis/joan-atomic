@@ -1,12 +1,12 @@
-@mixin card($button:false,$buttonColor:$color-success,$zindex:1,$hover:false){
+@mixin card($button:false,$zindex:2,$hover:false){
     .card{
-        @include smoothBox($zindex:$zindex);
+        @include smoothBox($backgroundColor:$color-clear, $zindex:$zindex);
         h3{
             margin: 0 0 1rem;
             font-size:1.5rem
         }
         @if $button{
-            @include button($backgroundColor:$buttonColor)
+            @include button()
         }
         @if $hover{
             &:hover{

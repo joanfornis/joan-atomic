@@ -1,0 +1,62 @@
+@mixin button($textColor:$color-clear) {
+    .button{
+        @include smoothBox ($backgroundColor:$color-secondary, $padding:0.75rem 1rem);
+        width:100%;
+        color: $textColor;
+        outline: 0;
+        cursor:pointer
+    }
+    .button-success{
+        $backgroundColor: $color-success;
+        background-color: $backgroundColor;
+        &:hover{
+            $hoverBackgroundColor: lighten($backgroundColor,10%);
+            background-color: $hoverBackgroundColor;
+            transition: all $transition-time ease-out
+        }
+        &:active{
+            $activeBackgroundColor: darken($backgroundColor,10%);
+            background-color: $activeBackgroundColor
+        }
+    }
+    .button-warning{
+        $backgroundColor: $color-warning;
+        background-color: $backgroundColor;
+        &:hover{
+            $hoverBackgroundColor: lighten($backgroundColor,10%);
+            background-color: $hoverBackgroundColor;
+            transition: all $transition-time ease-out
+        }
+        &:active{
+            $activeBackgroundColor: darken($backgroundColor,10%);
+            background-color: $activeBackgroundColor
+        }
+    }
+    .button-danger{
+        $backgroundColor: $color-danger;
+        background-color: $backgroundColor;
+        &:hover{
+            $hoverBackgroundColor: lighten($backgroundColor,10%);
+            background-color: $hoverBackgroundColor;
+            transition: all $transition-time ease-out
+        }
+        &:active{
+            $activeBackgroundColor: darken($backgroundColor,10%);
+            background-color: $activeBackgroundColor
+        }
+    }
+    .button-light{
+        color: $color-dark;
+        $backgroundColor: $color-light;
+        background-color: $backgroundColor;
+        &:hover{
+            $hoverBackgroundColor: lighten($backgroundColor,10%);
+            background-color: $hoverBackgroundColor;
+            transition: all $transition-time ease-out
+        }
+        &:active{
+            $activeBackgroundColor: darken($backgroundColor,10%);
+            background-color: $activeBackgroundColor
+        }
+    }
+}
