@@ -1,7 +1,7 @@
 @mixin cardsv1($backgroundColor:false){
     .cardsv1{
         background-color: $backgroundColor;
-        padding:1rem 0
+        padding:1rem 0;
+        @include card($button:true,$hover:true);
     }
-    @include card($button:true,$hover:true);
 }
