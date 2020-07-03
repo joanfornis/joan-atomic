@@ -1,53 +1,29 @@
-@mixin button($textColor:$color-clear) {
+@mixin button($textColor:$color-dark) {
     .button{
         @include smoothBox ($backgroundColor:$color-secondary, $padding:0.75rem 1rem);
         width:100%;
         color: $textColor;
         outline: 0;
-        cursor:pointer
+        cursor:pointer;
     }
     .button-success{
-        $backgroundColor: $color-success;
-        background-color: $backgroundColor;
-        &:hover{
-            $hoverBackgroundColor: lighten($backgroundColor,10%);
-            background-color: $hoverBackgroundColor;
-            transition: all $transition-time ease-out
-        }
-        &:active{
-            $activeBackgroundColor: darken($backgroundColor,10%);
-            background-color: $activeBackgroundColor
-        }
+        @include buttonColor($backgroundColor:$color-success,$lightText:true)
     }
     .button-warning{
-        $backgroundColor: $color-warning;
-        background-color: $backgroundColor;
-        &:hover{
-            $hoverBackgroundColor: lighten($backgroundColor,10%);
-            background-color: $hoverBackgroundColor;
-            transition: all $transition-time ease-out
-        }
-        &:active{
-            $activeBackgroundColor: darken($backgroundColor,10%);
-            background-color: $activeBackgroundColor
-        }
+        @include buttonColor($backgroundColor:$color-warning,$lightText:true)
     }
     .button-danger{
-        $backgroundColor: $color-danger;
-        background-color: $backgroundColor;
-        &:hover{
-            $hoverBackgroundColor: lighten($backgroundColor,10%);
-            background-color: $hoverBackgroundColor;
-            transition: all $transition-time ease-out
-        }
-        &:active{
-            $activeBackgroundColor: darken($backgroundColor,10%);
-            background-color: $activeBackgroundColor
-        }
+        @include buttonColor($backgroundColor:$color-danger,$lightText:true)
     }
     .button-light{
-        color: $color-dark;
-        $backgroundColor: $color-light;
+        @include buttonColor($backgroundColor:$color-light)
+    }
+}
+
+    @mixin buttonColor($backgroundColor:$color-light,$lightText:false) {
+        @if ($lightText){
+            color: $color-clear
+        }
         background-color: $backgroundColor;
         &:hover{
             $hoverBackgroundColor: lighten($backgroundColor,10%);
@@ -59,4 +35,3 @@
             background-color: $activeBackgroundColor
         }
     }
-}

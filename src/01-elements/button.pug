@@ -1,2 +1,5 @@
 mixin button(buttonLink, buttonText, buttonType)
-    button(class='button button-'+buttonType href=buttonLink) #{buttonText}
+    if buttonType
+        button(class='button button-'+buttonType href=buttonLink) #{buttonText}
+    else
+        button(class='button' href=buttonLink) #{buttonText}
