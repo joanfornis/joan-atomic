@@ -1,4 +1,4 @@
-mixin card(title, paragraph1, paragraph2, buttonLink, buttonText, buttonType)
+mixin card(title, paragraph1, paragraph2, button)
     .card
         if title
             h3 #{title}
@@ -6,5 +6,5 @@ mixin card(title, paragraph1, paragraph2, buttonLink, buttonText, buttonType)
             p #{paragraph1}
         if paragraph2
             p #{paragraph2}
-        if buttonLink && buttonText
-            +button(buttonLink, buttonText, buttonType)
+        if button
+            +button(button)

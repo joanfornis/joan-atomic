@@ -1,33 +1,35 @@
 @mixin button($textColor:$color-dark) {
     .button{
-        @include smoothBox ($backgroundColor:$color-secondary, $padding:0.75rem 1rem);
+        @include smoothBox ($padding:0.75rem 1rem);
         width:100%;
         color: $textColor;
         outline: 0;
         cursor:pointer;
+        @include buttonColor
     }
     .button-success{
-        @include buttonColor($backgroundColor:$color-success,$lightText:true)
+        @include buttonColor($backgroundColor:$color-success)
     }
     .button-warning{
-        @include buttonColor($backgroundColor:$color-warning,$lightText:true)
+        @include buttonColor($backgroundColor:$color-warning)
     }
     .button-danger{
-        @include buttonColor($backgroundColor:$color-danger,$lightText:true)
+        @include buttonColor($backgroundColor:$color-danger)
     }
     .button-light{
-        @include buttonColor($backgroundColor:$color-light)
+        @include buttonColor($backgroundColor:$color-light,$lightText:false)
     }
 }
 
-    @mixin buttonColor($backgroundColor:$color-light,$lightText:false) {
+    @mixin buttonColor($backgroundColor:$color-secondary,$lightText:true) {
         @if ($lightText){
             color: $color-clear
+        } @else {
+            color: $color-dark
         }
         background-color: $backgroundColor;
         &:hover{
-            $hoverBackgroundColor: lighten($backgroundColor,10%);
-            background-color: $hoverBackgroundColor;
+            background-color: lighten($backgroundColor,10%);
             transition: all $transition-time ease-out
         }
         &:active{
